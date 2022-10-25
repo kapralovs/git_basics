@@ -6,4 +6,5 @@ type User struct {
 	Surname string
 	Age     int
 	Weight  float32
+	Vehicle *Car
 }

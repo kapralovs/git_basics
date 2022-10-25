@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/kapralovs/git_basics/internal/models"
+)
 
 func main() {
 	fmt.Println("hello world!")
@@ -13,4 +17,10 @@ func main() {
 	}
 
 	fmt.Println(someUser)
+
+	vw := new(models.Car)
+	vw.Model = "Volkswagen Polo"
+	someUser.Vehicle = vw
+
+	fmt.Println(someUser.Vehicle.Model)
 }
